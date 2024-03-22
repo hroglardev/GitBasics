@@ -34,6 +34,8 @@ Aca vemos como fuimos a la carpeta FACU, luego a la carpeta Arquitectura de comp
 
 Nota: Solo podemos movernos a carpetas que se encuentren dentro de la carpeta en la cual estamos parados.
 
+Recomendacion: Utiliza la tecla "tab" para completar el nombre del directorio luego de escribir las primeras letras.
+
 ¿Que pasa si no se que carpetas hay en la carpeta en la que estoy parado?
 
 Para eso utilizamos el comando "ls". Este nos indica que carpetas / archivos existen en la carpeta donde estamos.
@@ -41,6 +43,8 @@ Para eso utilizamos el comando "ls". Este nos indica que carpetas / archivos exi
 <img src="https://r2.easyimg.io/m5pkohofj/4lsbasico.jpg" />
 
 Acordate que podes moverte con la terminal usando "cd + nombre de carpeta" y podes conectarte directamente con la carpeta destino en una sola linea de este modo:
+
+<img src="https://r2.easyimg.io/crfmorton/oneline.jpg" />
 
 Otros comandos que podemos usar son:
 
