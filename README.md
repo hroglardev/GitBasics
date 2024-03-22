@@ -182,4 +182,4 @@ Solamente necesitas usar los comandos git add, git commit y git push para subir 
 
 Ten en cuenta que no necesitas linkear el repositorio local al repositorio de github ya que al clonarse directamente, esto ya es automatico.
 
-Prueba crear archivos / carpetas, moverte a esta carpeta y crear archivos dentro y haz commits y pushealos para ir probando.
+Prueba crear archivos / carpetas, moverte a esta carpeta y crear archivos dentro. Hace commits y pushealos para ir probando.
