@@ -106,7 +106,7 @@ Este comando nos proporciona informacion sobre como esta nuestro entorno de trab
 
 Podemos ver que estamos en la rama "main" (no te preocupes por las ramas por ahora)
 
-Aun no hay "commits" hechos (no hay cambios guardados en el repositorio) y nos indica que los archicos en rojo no estan siendo trackeados para nuestro proximo commit.
+Aun no hay "commits" hechos (no hay cambios guardados en el repositorio) y nos indica que los archivos en rojo no estan siendo trackeados para nuestro proximo commit.
 
 <img src="https://r2.easyimg.io/m5pkohofj/12gitstatus.jpg" />
 
