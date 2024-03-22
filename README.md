@@ -2,9 +2,9 @@
 
 Repositorio para ayudar a quien lo necesite a usar la terminal y comandos basicos.
 
-# Navegando con la y usando la terminal
+# Navegando con la terminal y usandola
 
-Para agilizar nuestro desarrollo debemos conocer algunos comandos basicos de terminal sea cual sea y aprender a leerla.
+Para agilizar nuestro desarrollo debemos conocer algunos comandos basicos de terminal sea cual sea y aprender a leerla, una vez que te acostumbras a trabajar con la terminal es mucho mas comodo para crear archivos y carpetas en tus proyectos.
 Podemos usar powershell, bash, etc. Para estos ejemplos usaremos la terminal bash pero los comandos son iguales al usarlos en powershell.
 
 Para fines practicos usaremos la terminal directamente desde nuestro IDE (vsCode) aunque tranquilamente puede abrirse una terminal desde cualquier carpeta.
@@ -13,7 +13,11 @@ Para fines practicos usaremos la terminal directamente desde nuestro IDE (vsCode
 
 Para abrir una terminal nueva simplemente clickearemos en nuestro VScode en "Terminal" => New terminal. O si lo prefieren pueden usar el comando indicado en la opción.
 
+<img src="https://ibb.co/HPYC5XQ">
+
 Al abrir la terminal nos indicará en que directorio estamos. En este ejemplo podemos ver que estamos en el escritorio.
+
+<img src="https://ibb.co/pKQ4qRy">
 
 <h2>Navegación con la terminal</h2>
 
@@ -26,11 +30,15 @@ Para navegar con la terminal usaremos el comando "cd" seguido por un espacio y l
 
 Aca vemos como fuimos a la carpeta FACU, luego a la carpeta Arquitectura de computadoras, luego retrocedimos una carpeta y nos movimos a Fundamentos de Informatica.
 
+<img src="https://ibb.co/26qGKR6">
+
 Nota: Solo podemos movernos a carpetas que se encuentren dentro de la carpeta en la cual estamos parados.
 
 ¿Que pasa si no se que carpetas hay en la carpeta en la que estoy parado?
 
 Para eso utilizamos el comando "ls". Este nos indica que carpetas / archivos existen en la carpeta donde estamos.
+
+<img src="https://ibb.co/rMkGk9f">
 
 Acordate que podes moverte con la terminal usando "cd + nombre de carpeta" y podes conectarte directamente con la carpeta destino en una sola linea de este modo:
 
@@ -44,11 +52,11 @@ Otros comandos que podemos usar son:
   <li>clear (limpia la terminal)</li>
 </ul>
 
-# Creando el repositorio
+# Creando / Clonando un repositorio
 
 Al trabajar con GitHub, necesitaremos crear repositorios para trabajar.
 
-Tenemos dos escenarios posibles al crear un repositorio personal. Veamoslos:
+Tenemos dos escenarios posibles al crear un repositorio personal, crear una carpeta y conectarla a un repositorio de github, o clonar un repositorio de github. Veamoslos:
 
 <h2>Caso 1: Crear la carpeta en nuestra computadora y luego conectarla con un repositorio en github</h2>
 
@@ -56,23 +64,43 @@ Primero vamos a crear nuestra carpeta (Buena oportunidad para utilizar los coman
 
 Recorda "cd" para moverte, "ls" para ver que hay donde estamos parados, "touch / mkdir" para crear.
 
-<h3>En nuestro perfil de Github vamos al menu superior y seleccionamos la opción de repositorio nuevo.</h3>
+<img src="https://ibb.co/PgzWC9T">
 
-Aqui vamos a nombrar a nuestro repositorio (Mi_Nuevo_repositorio en mi caso) y a escribir una breve descripción del mismo. Lo demas lo dejamos tal cual está y abajo de todo clickeamos crear repositorio. No toques nada ni cierres la pestaña, la necesitaras después.
+<img src="https://ibb.co/D79VJyr">
 
-<h3>Parados en nuestra carpeta que creamos con nuestros archivos usamos el comando "git init" para inicializar localmente un repositorio nuevo.</h3>
+En VScode movete a la nueva carpeta donde creaste los archivos clickeando en open folder (hay mejores maneras de hacer esto pero por ahora hazlo así)
+
+<img src="https://ibb.co/k93p7rw">
+
+En nuestro perfil de Github vamos al menu superior y seleccionamos la opción de repositorio nuevo.
+
+<img src="https://ibb.co/vhdfbjz">
+
+Aqui vamos a nombrar a nuestro repositorio (Mi_Nuevo_repositorio en mi caso) y a escribir una breve descripción del mismo (DEJA DESMARCADA LA OPCION DEL ADD README. Si por accidente la marcaste, salta al caso 2 para directamente clonar (descargar) el repositorio creado a tu computadora). Lo demas lo dejamos tal cual está y abajo de todo clickeamos crear repositorio. No toques nada ni cierres la pestaña, la necesitaras después.
+
+<img src="https://ibb.co/PQVXcW0">
+
+Parados en nuestra carpeta(en VScode) que creamos con nuestros archivos usamos el comando "git init" para inicializar localmente un repositorio nuevo.
+
+<img src="https://ibb.co/yddTB9q">
 
 En github, en la pantalla de muestra, ve al segundo recuadro y copia el primer comando "git remote add origin ............."
+
+<img src="https://ibb.co/gbYLd0Q">
 
 Este comando es el que conecta nuestro repositorio local con nuestro repositorio de github.
 
 Pega el comando que copiaste en tu terminal y ejecutalo para conectar los repositorios local y el de github.
 
-<h3>Hagamos algunos cambios. Agregamos algunas cosas a nuestro archivo index.html y a nuestro archivoPython.py (No te olvides de usar ctrl + s para guardar los cambios)</h3>
+<img src="https://ibb.co/5sYgCBF">
 
-Como ves, en nuestro vsCode podemos ver que tenemos cambios sin "subir" a nuestro repositorio de github y en que archivos estan dichos cambios.
+Hagamos algunos cambios. Agregamos algunas cosas a nuestro archivo index.html y a nuestro archivoPython.py (No te olvides de usar ctrl + s para guardar los cambios)
 
-<h3>Aca usamos nuestro segundo comando de terminal de tipo git: "git status"<h3>
+<img src="https://ibb.co/ZYXRHpC">
+
+<img src="https://ibb.co/5WM7TpD">
+
+Aca usamos nuestro segundo comando de terminal de tipo git: "git status"
 
 Este comando nos proporciona informacion sobre como esta nuestro entorno de trabajo.
 
@@ -80,32 +108,70 @@ Podemos ver que estamos en la rama "main" (no te preocupes por las ramas por aho
 
 Aun no hay "commits" hechos (no hay cambios guardados en el repositorio) y nos indica que los archicos en rojo no estan siendo trackeados para nuestro proximo commit.
 
-<h3>Usamos un nuevo comando. git add "nombre/s" para decirle a nuestra terminal que añada los archivos que le indicamos a nuestro proximo commit</h3>
+<img src="https://ibb.co/BCckX3K">
 
-Como nosotros solo queriamos mostrar hello world en nuestro archivo python y crear una estructura inicial en nuestro html, vamos a hacer un commit de estos cambios (por ahora ignoramos el arhivo "archivoJavaScript.js)
+Usamos un nuevo comando. git add "nombre/s" para decirle a nuestra terminal que añada los archivos que le indicamos a nuestro proximo commit
 
-Nota que al escribir git status otra vez, nos muestra que esos dos archivos (ahora en verde) estan siendo trackeados, no como el archivo "js" en rojo.
+Nota que al escribir git status otra vez, nos muestra que los dos archivos que agregamos con "git add" (ahora en verde) estan siendo trackeados, no como el archivo "html" en rojo.
 
-<h3>Para esto utilizamos un nuevo comando git. git commit -m "mensaje"</h3>
+<img src="https://ibb.co/sC7nG2M">
+
+Para esto utilizamos un nuevo comando git. git commit -m "mensaje"
 
 Aqui utilizamos la bandera -m para especificar un mensaje y entre comillas, escribimos el mensaje que queremos enviar (en este caso usamos "Mi primer commit").
 
+<img src="https://ibb.co/DCD42zG">
+
 Es hora de subir nuestros cambios a github. Por ser la primera vez que subimos algo a un repositorio nuevo, utilizamos el comando "git push -u origin main". Este comando simplemente esta diciendo que suban los archivos a la rama "main" del repositorio.
 
-Recarga la pagina del repositorio de github y ve lo que pasa. Veras que ahora tiene tus archivos de python y html, tu mensaje de commit y cuando fue hecho.
+Recarga la pagina del repositorio de github y ve lo que pasa. Veras que ahora tiene tus archivos, tu mensaje de commit y cuando fue hecho.
 
-<h3>Agreguemos algo a nuestro archivo .js y guardamos el archivo (console.log() es lo mismo que print() de python solo que se usa en javascript. Ambas funciones imprimen un mensaje en la consola)</h3>
+<img src="https://ibb.co/KjCC2vc">
+
+Agreguemos algo a nuestro archivo .js y guardamos el archivo (console.log() es lo mismo que print() de python solo que se usa en javascript. Ambas funciones imprimen un mensaje en la consola)
 
 Si utilizamos git status podemos ver que nuestro archivo js tiene modificaciones y no esta siendo trackeado para el proximo commit.
 
-Si queremos añadir todos los archivos que hayan sufrido cambios, podemos usar "git add ." en vez de nombrar el/los archivos especificos. Si preferis ser mas especifico podes usar la version git add "nombre del archivo"
+<img src="https://ibb.co/SRZMxWN">
+
+Si queremos añadir todos los archivos que hayan sufrido cambios, podemos usar "git add ." en vez de nombrar el/los archivos especificos. Usamos "git add ." para incluir nuestro archivo html en nuestro nuevo commit.
 
 Haz un nuevo commit del mismo modo que antes y dale un mensaje.
 
 A partir de ahora el comando que usaras para subir cambios a tu repositorio de github es simplement git push (siempre luego de los commits).
+
+<img src="https://ibb.co/WWM9NHK">
 
 Nota: no necesitas "pushear" cada vez que hagas un commit, simplemente podes hacer varios commits para registrar los cambios y cuando termines de trabajar por el día, usar git push para subir todos los cambios a github.
 
 Mas adelante veremos como dar marcha atras hasta un commit que sabemos que nuestro codigo funcionaba bien por si nos equivocamos en el código y queremos volver a una version mas estable/funcional de este.
 
 Podemos ver que nuestro repositorio ya tiene los cambios hechos de nuestro primer commit y nuestro ultimo commit al archivo js.
+
+<h2>Caso 2: Crear el repositorio directamente en github y clonarlo a nuestra computadora</h2>
+
+Ese caso no solo sirve para crear un nuevo repositorio, sino que ademas sirve para bajar repositorios a nuestra computadora. Al clonar un repositorio en vez crearlo como en el caso 1, el repositorio local y el repositorio de github ya estarán conectados.
+
+Para trabajar de esta manera, crea un repositorio nuevo tal cual lo hicimos en el Caso anterior solo que esta vez marca la opcion de Add README (Si por accidente no tildaste la opcion de ADD README, checkea el Caso 1 descrito anteriormente)
+
+<img src="https://ibb.co/1TNXWqt">
+
+Luego de esto, veremos que nuestro repositorio solamente tiene un archivo README.md con una breve descripción del proyecto.
+
+Para clonar este repositorio en nuestra computadora, haremos click en el boton verde "code" y clickearemos el boton de copiar para copiar el link que se muestra (Elegir la opcion https de momento)
+
+<img src="https://ibb.co/C178TB5">
+
+En nuestro VScode usaremos el comando "git clone" seguido del link que copiamos de github. Recuerda que debes ejecutar el comando desde la carpeta donde quieres guardar tu repositorio en tu pc.
+
+<img src="https://ibb.co/K2X48N4">
+
+Una vez que termine, simplemente nos traslamos a la carpeta del repositorio para comenzar a trabajar.
+
+<img src="https://ibb.co/LnQCn2J">
+
+Prueba escribir en tu terminal, parado en la carpeta de tu repositorio clonado el comando "code ." (code "punto")
+
+¿Que sucedio?
+
+Felicidades, puedes cerrar tu primera ventana de VSCode y trabajar con la que se acaba de abrir donde esta tu nuevo proyecto.
